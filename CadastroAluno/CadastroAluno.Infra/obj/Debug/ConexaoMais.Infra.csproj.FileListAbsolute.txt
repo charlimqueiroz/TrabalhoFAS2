@@ -1,0 +1,6 @@
+E:\Projetos\ConexaoMais\ConexaoMais\ConexaoMais.Infra\bin\Debug\ConexaoMais.Infra.dll
+E:\Projetos\ConexaoMais\ConexaoMais\ConexaoMais.Infra\bin\Debug\ConexaoMais.Infra.pdb
+E:\Projetos\ConexaoMais\ConexaoMais\ConexaoMais.Infra\bin\Debug\log4net.dll
+E:\Projetos\ConexaoMais\ConexaoMais\ConexaoMais.Infra\obj\Debug\ConexaoMais.Infra.csprojResolveAssemblyReference.cache
+E:\Projetos\ConexaoMais\ConexaoMais\ConexaoMais.Infra\obj\Debug\ConexaoMais.Infra.dll
+E:\Projetos\ConexaoMais\ConexaoMais\ConexaoMais.Infra\obj\Debug\ConexaoMais.Infra.pdb

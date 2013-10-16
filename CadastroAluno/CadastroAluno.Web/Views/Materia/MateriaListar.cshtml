@@ -1,0 +1,12 @@
+﻿@model  IList<CadastroAluno.Domain.Aluno>
+
+
+@{
+    ViewBag.Title = "Aluno";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="grid-view">
+    @Html.Partial("_AlunoGrid", Model)
+</div>

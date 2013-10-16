@@ -1,0 +1,86 @@
+﻿<div class="menu">
+
+    <div class="breadLine">
+        <div class="arrow"></div>
+        <div class="adminControl">
+            Olá, Visitante
+       
+        </div>
+    </div>
+
+    @* <div class="admin">
+        <div class="image">
+            <img src="Images/users/aqvatarius.jpg" class="img-polaroid" />
+        </div>
+        <ul class="control">
+            <li><span class="icon-comment"></span><a href="messages.html">Messages</a> <a href="messages.html" class="caption red">12</a></li>
+            <li><span class="icon-cog"></span><a href="forms.html">Settings</a></li>
+            <li><span class="icon-share-alt"></span><a href="login.html">Logout</a></li>
+        </ul>
+        <div class="info">
+            <span>Welcom back! Your last visit: 24.10.2012 in 19:55</span>
+        </div>
+    </div>*@
+
+    <ul class="navigation">
+        <li class="active">
+            <a href="@Url.Action("Index", "Admin")">
+                <span class="isw-grid"></span><span class="text">Dashboard</span>
+            </a>
+        </li>
+        <li class="openable">
+            <a href="#">
+                <span class="isw-list"></span><span class="text">Cadastro</span>
+            </a>
+            <ul>
+                <li>
+                    <a href="@Url.Action("AlunoListar", "Aluno")">
+                        <span class="icon-th-large"></span><span class="text">Cadastro de Aluno</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="dr"><span></span></div>
+
+    @*<div class="widget-fluid">
+        <div id="menuDatepicker"></div>
+    </div>
+
+    <div class="dr"><span></span></div>
+
+    <div class="widget">
+
+        <div class="input-append">
+            <input id="appendedInputButton" style="width: 118px;" type="text">
+            <button class="btn" type="button">Search</button>
+        </div>
+
+    </div>
+
+    <div class="dr"><span></span></div>
+
+    <div class="widget-fluid">
+
+        <div class="wBlock clearfix">
+            <div class="dSpace">
+                <h3>Last visits</h3>
+                <span class="number">6,302</span>
+                <span>5,774 <b>unique</b></span>
+                <span>3,512 <b>returning</b></span>
+            </div>
+            <div class="rSpace">
+                <h3>Today</h3>
+                <span class="mChartBar" sparktype="bar" sparkbarcolor="white">
+                    <!--240,234,150,290,310,240,210,400,320,198,250,222,111,240,221,340,250,190-->
+                </span>
+                <span>&nbsp;</span>
+                <span>65% <b>New</b></span>
+                <span>35% <b>Returning</b></span>
+            </div>
+        </div>
+
+    </div>*@
+
+</div>

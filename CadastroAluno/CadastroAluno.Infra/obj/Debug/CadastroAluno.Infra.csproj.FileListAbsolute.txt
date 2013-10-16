@@ -1,0 +1,11 @@
+C:\Users\charles.90TI\Dropbox\trabalho nhibernate\CadastroAluno\CadastroAluno\CadastroAluno.Infra\bin\Debug\CadastroAluno.Infra.dll
+C:\Users\charles.90TI\Dropbox\trabalho nhibernate\CadastroAluno\CadastroAluno\CadastroAluno.Infra\bin\Debug\CadastroAluno.Infra.pdb
+C:\Users\charles.90TI\Dropbox\trabalho nhibernate\CadastroAluno\CadastroAluno\CadastroAluno.Infra\bin\Debug\log4net.dll
+C:\Users\charles.90TI\Dropbox\trabalho nhibernate\CadastroAluno\CadastroAluno\CadastroAluno.Infra\obj\Debug\CadastroAluno.Infra.csprojResolveAssemblyReference.cache
+C:\Users\charles.90TI\Dropbox\trabalho nhibernate\CadastroAluno\CadastroAluno\CadastroAluno.Infra\obj\Debug\CadastroAluno.Infra.dll
+C:\Users\charles.90TI\Dropbox\trabalho nhibernate\CadastroAluno\CadastroAluno\CadastroAluno.Infra\obj\Debug\CadastroAluno.Infra.pdb
+C:\Users\lourenco_ferreira\Dropbox\pos\fas2\trabalho nhibernate\CadastroAluno\CadastroAluno\CadastroAluno.Infra\bin\Debug\CadastroAluno.Infra.dll
+C:\Users\lourenco_ferreira\Dropbox\pos\fas2\trabalho nhibernate\CadastroAluno\CadastroAluno\CadastroAluno.Infra\bin\Debug\CadastroAluno.Infra.pdb
+C:\Users\lourenco_ferreira\Dropbox\pos\fas2\trabalho nhibernate\CadastroAluno\CadastroAluno\CadastroAluno.Infra\bin\Debug\log4net.dll
+C:\Users\lourenco_ferreira\Dropbox\pos\fas2\trabalho nhibernate\CadastroAluno\CadastroAluno\CadastroAluno.Infra\obj\Debug\CadastroAluno.Infra.dll
+C:\Users\lourenco_ferreira\Dropbox\pos\fas2\trabalho nhibernate\CadastroAluno\CadastroAluno\CadastroAluno.Infra\obj\Debug\CadastroAluno.Infra.pdb

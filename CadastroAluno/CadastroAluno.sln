@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroAluno.Domain", "CadastroAluno.Domain\CadastroAluno.Domain.csproj", "{91577F99-3A22-4F23-8EAD-C97D576C3D15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroAluno.Infra", "CadastroAluno.Infra\CadastroAluno.Infra.csproj", "{BA41F7AA-865D-4C17-92C9-67B1689BEFB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroAluno.Web", "CadastroAluno.Web\CadastroAluno.Web.csproj", "{AEB1DF6A-2F62-453E-9A79-EC170BAC4A31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91577F99-3A22-4F23-8EAD-C97D576C3D15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91577F99-3A22-4F23-8EAD-C97D576C3D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91577F99-3A22-4F23-8EAD-C97D576C3D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91577F99-3A22-4F23-8EAD-C97D576C3D15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA41F7AA-865D-4C17-92C9-67B1689BEFB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA41F7AA-865D-4C17-92C9-67B1689BEFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA41F7AA-865D-4C17-92C9-67B1689BEFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA41F7AA-865D-4C17-92C9-67B1689BEFB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEB1DF6A-2F62-453E-9A79-EC170BAC4A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEB1DF6A-2F62-453E-9A79-EC170BAC4A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEB1DF6A-2F62-453E-9A79-EC170BAC4A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEB1DF6A-2F62-453E-9A79-EC170BAC4A31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
