@@ -12,50 +12,50 @@ using CadastroAluno.Web.Models;
 namespace CadastroAluno.Web.Controllers
 {
     
-    public class AlunoController : BaseController
+    public class MateriaController : BaseController
     {
 
-        #region Categoria de Aluno
-        public ActionResult AlunoListar()
+        #region Categoria de Materia
+        public ActionResult MateriaListar()
         {
-            var lista = AlunoBusiness.ListarTodos();
+            var lista = MateriaBusiness.ListarTodos();
             if (Request.IsAjaxRequest())
-                return PartialView("_AlunoGrid", lista);
+                return PartialView("_MateriaGrid", lista);
             return View(lista);
         }
         [HttpGet]
-        public ActionResult AlunoInserir()
+        public ActionResult MateriaInserir()
         {
             if (Request.IsAjaxRequest())
-                return PartialView("_AlunoDados", new Aluno());
+                return PartialView("_MateriaDados", new Materia());
             return View();
         }
         [HttpPost]
-        public ActionResult AlunoInserir(Aluno item)
+        public ActionResult MateriaInserir( Materia item)
         {
             try
             {
-                AlunoBusiness.Salvar(item);
+                MateriaBusiness.Salvar(item);
                 if (Request.IsAjaxRequest())
                     return Json(new { Sucesso = true, Mensagem = "Registro inserido com sucesso" }, JsonRequestBehavior.AllowGet);
 
-                return RedirectToAction("AlunoListar");
+                return RedirectToAction("MateriaListar");
             }
             catch (Exception ex)
             {
                 if (Request.IsAjaxRequest())
                     return Json(new { Success = false, Mensagem = ex.Message }, JsonRequestBehavior.AllowGet);
-                return RedirectToAction("AlunoListar");
+                return RedirectToAction("MateriaListar");
             }
         }
         [HttpGet]
-        public ActionResult AlunoEditar(string id)
+        public ActionResult MateriaEditar(string id)
         {
             try
             {
-                var obj = AlunoBusiness.BuscarPorCodigo(long.Parse(Security.decrypt(id)));
+                var obj = MateriaBusiness.BuscarPorCodigo(long.Parse(Security.decrypt(id)));
                 if (Request.IsAjaxRequest())
-                    return PartialView("_AlunoDados", obj);
+                    return PartialView("_MateriaDados", obj);
                 return View(obj);
             }
             catch (Exception ex)
@@ -66,28 +66,28 @@ namespace CadastroAluno.Web.Controllers
             }
         }
         [HttpPost]
-        public ActionResult AlunoEditar(Aluno item)
+        public ActionResult MateriaEditar( Materia item)
         {
             try
             {
-                AlunoBusiness.Atualizar(item);
+                MateriaBusiness.Atualizar(item);
                 if (Request.IsAjaxRequest())
                     return Json(new { Sucesso = true }, JsonRequestBehavior.AllowGet);
 
-                return RedirectToAction("AlunoListar");
+                return RedirectToAction("MateriaListar");
             }
             catch (Exception ex)
             {
                 if (Request.IsAjaxRequest())
                     return Json(new { Success = false, Mensagem = ex.Message }, JsonRequestBehavior.AllowGet);
-                return RedirectToAction("AlunoListar");
+                return RedirectToAction("MateriaListar");
             }
         }
-        public ActionResult AlunoExcluir(string id)
+        public ActionResult MateriaExcluir(string id)
         {
             try
             {
-                AlunoBusiness.Excluir(long.Parse(Security.decrypt(id)));
+                MateriaBusiness.Excluir(long.Parse(Security.decrypt(id)));
                 if (Request.IsAjaxRequest())
                     return Json(new { Success = true }, JsonRequestBehavior.AllowGet);
                 return View();
@@ -99,27 +99,7 @@ namespace CadastroAluno.Web.Controllers
                 throw;
             }
         }
-        //[HttpGet]
-        //public ActionResult MateriaAluno()
-        //{
-        //    var model = new AlunoModel()
-        //    {
-        //        Alunos = AlunoBusiness.ListarTodos(),
-        //        Materias = MateriaBusiness.ListarTodos()
-        //    };
-        //    return View(model);
-        //}
-        //[HttpGet]
-        //public ActionResult MateriaAluno()
-        //{
-        //    var model = new AlunoModel()
-        //    {
-        //        Alunos = AlunoBusiness.ListarTodos(),
-        //        Materias = MateriaBusiness.ListarTodos()
-        //    };
-        //    return View(model);
-        //}
-
+      
         #endregion
 
      }

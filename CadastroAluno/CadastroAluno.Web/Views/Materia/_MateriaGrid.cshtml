@@ -1,12 +1,12 @@
 ﻿@using CadastroAluno.Web.Extensions
 
-@model  IList<CadastroAluno.Domain.Aluno>
+@model  IList<CadastroAluno.Domain.Materia>
 
 
 <div class="workplace">
 
     <div class="page-header">
-        <h1>Categoria de Evento <small>Lista</small></h1>
+        <h1>Cadastro Matéria <small>Lista</small></h1>
     </div>
 
     <div class="row-fluid">
@@ -19,21 +19,19 @@
                     <li>
                         <a href="#" class="isw-settings"></a>
                         <ul class="dd-list">
-                            <li><a href="#" url-modal="@Url.Action("AlunoInserir", "Aluno")" ><span class="isw-plus"></span>Novo</a></li>
-                            <li><a href="#" url-modal="@Url.Action("AlunoEditar", "Aluno")" ><span class="isw-edit"></span>Editar</a></li>
+                            <li><a href="#" url-modal="@Url.Action("MateriaInserir", "Materia")" ><span class="isw-plus"></span>Novo</a></li>
+                            <li><a href="#" url-modal="@Url.Action("MateriaEditar", "Materia")" ><span class="isw-edit"></span>Editar</a></li>
                             <li class="list-excluir"><span><a href="#"><span class="isw-delete"></span>Excluir</a></span></li>
                         </ul>
                     </li>
                 </ul>
             </div>
             <div class="block-fluid">
-                <table width="100%" class="table" list-action="@Url.Action("AlunoListar", "Aluno")/"  delete-action="@Url.Action("AlunoExcluir", "Aluno")/" >
+                <table width="100%" class="table" list-action="@Url.Action("MateriaListar", "Materia")/"  delete-action="@Url.Action("MateriaExcluir", "Materia")/" >
                     <thead>
                         <tr>
                             <th class="clmRadio"></th>
-                            <th>Nome</th>
-                            <th>Email</th>
-                            <th>Telefone</th>
+                            <th>Descrição</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -43,9 +41,8 @@
                             {
                             <tr>
                                 <td><input type="radio" data-value="@item.EncryptID" name="gridRadio" /></td>
-                                <td>@item.Nome</td>
-                                <td>@item.Email</td>
-                                <td>@item.Telefone</td>
+                                <td>@item.Descricao</td>
+                                
                             </tr>    
                             }
                         }

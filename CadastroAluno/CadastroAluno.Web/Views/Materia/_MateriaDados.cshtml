@@ -1,46 +1,30 @@
-﻿@model  CadastroAluno.Domain.Aluno
+﻿@model  CadastroAluno.Domain.Materia
 
 <div class="row-fluid">
     <div class="span11">
         <div class="head clearfix">
             <div class="isw-ok"></div>
-            <h4>Cadastro Aluno</h4>
+            <h4>Cadastro Materia</h4>
         </div>
         <div>
-            @using (Html.BeginForm("AlunoInserir", "AlunoController", FormMethod.Post, new { @class = "cadForm" }))
+            @using (Html.BeginForm("MateriaInserir", "MateriaController", FormMethod.Post, new { @class = "cadForm" }))
             {
                 @Html.HiddenFor(m => m.EncryptID, new { @class = "id-registro" })
 
                 <div class="row-form clearfix">
-                    <div  class="span3">Nome:</div>
+                    <div  class="span3">Descição:</div>
                     <div class="span9">
-                        @Html.TextBoxFor(m => m.Nome)
-                    </div>
-                    <div class="span3">Email:</div>
-                    <div class="span9">
-                        @Html.TextBoxFor(m => m.Email)
-                    </div>
-                    <div class="span3">Data de Dascimento:</div>
-                    <div class="span9">
-                        @Html.TextBoxFor(m => m.DataNascimento)
-                    </div>
-                    <div class="span3">Telefone:</div>
-                    <div class="span9">
-                        @Html.TextBoxFor(m => m.Telefone)
-                    </div>
-                    <div class="span3">Ativo:</div>
-                    <div class="span9">
-                        @Html.CheckBoxFor(m => m.Ativo)
+                        @Html.TextBoxFor(m => m.Descricao)
                     </div>
                 </div>
                 <br />
                 <div class="footer tar">
-                    <input type="submit" class="btn salvar-modal" url-post-create="@Url.Action("AlunoInserir", "Aluno")" url-post-edit="@Url.Action("AlunoEditar", "Aluno")" value="Salvar" />
-                    <input type="reset" class="btn botao-cancelar" value="Cancelar" url-redirect="@Url.Action("AlunoListar", "Aluno")" />
+                    <input type="submit" class="btn salvar-modal" url-post-create="@Url.Action("MateriaInserir", "Materia")" url-post-edit="@Url.Action("MateriaEditar", "Materia")" value="Salvar" />
+                    <input type="reset" class="btn botao-cancelar" value="Cancelar" url-redirect="@Url.Action("MateriaListar", "Materia")" />
                 </div>
             }
         </div>
     </div>
 </div>
 <script type="text/javascript" src="@Url.Content("/Scripts/funcoes.js")"></script>
-<script type="text/javascript" src="@Url.Content("/Scripts/Views/Aluno.js")"></script>
+<script type="text/javascript" src="@Url.Content("/Scripts/Views/Materia.js")"></script>

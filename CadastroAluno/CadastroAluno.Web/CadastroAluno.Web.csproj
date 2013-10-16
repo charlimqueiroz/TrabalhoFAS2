@@ -197,6 +197,7 @@
     <Compile Include="Binders\AlunoMateriaBinder.cs" />
     <Compile Include="Controllers\AlunoController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\MateriaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Extensions\HtmlExtension.cs" />
     <Compile Include="Extensions\UserExtension.cs" />
@@ -554,6 +555,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Aluno\MateriaAluno.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Materia\_MateriaDados.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Materia\_MateriaGrid.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Materia\MateriaListar.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Materia\MateriaEditar.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Materia\MateriaInserir.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Materia\MateriaAluno.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
